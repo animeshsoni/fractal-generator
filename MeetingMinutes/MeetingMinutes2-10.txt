@@ -1,0 +1,29 @@
+Meeting Minutes for 2/10/2017:
+
+Meeting Attendance:
+  * Animesh Soni
+  * Ashok Kumar
+  * Luke Bulatowicz (M)
+
+Tasks completed since last meeting:
+  * Establish Team Name
+  * Set Up Repository
+  * Scheduled Meeting for the Upcoming week
+    - Mondays at 5pm for Ashok and Luke, Animesh if available
+    - Fridays at 11pm before Lab (Whole Group), and 5pm after Lecture
+    - Starting Monday February 13th, 2017
+  * Create Test Plans
+  * Delegated a Fractal Set for each person
+
+Tasks started, but not completed, since last meeting:
+  * xxx
+  * xxx
+
+Tasks to be worked on (and by which team members) for the next meeting:
+  * Tests for Calculating the Coordinates
+  * 
+
+Schedule for the next week's set of pair programming meetings:
+  * Work on the x coordinate, and y coordinate algorithms.
+  * Work on the Escape Distance algorithm
+  * Plan next meetings.
