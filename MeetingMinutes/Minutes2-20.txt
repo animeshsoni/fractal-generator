@@ -1,0 +1,22 @@
+Meeting Minutes for February 20, 2017:
+
+Meeting Attendance:
+  * Ashok Kumar
+  * Animesh Soni
+  * Luke Bulatowicz (M)
+
+Tasks completed since last meeting:
+  * X translator
+  * Y translator
+
+Tasks started, but not completed, since last meeting:
+  * Begin Coding for the Project
+  * 
+
+Tasks to be worked on (and by which team members) for the next meeting:
+  * Bring Expo Markers
+  *
+
+Schedule for the next week's set of pair programming meetings:
+  * Friday 11am, 12pm, 5pm
+  * Thursday 
