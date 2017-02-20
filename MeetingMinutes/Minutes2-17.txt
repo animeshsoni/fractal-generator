@@ -1,22 +1,22 @@
-Meeting Minutes for _______________:
+Meeting Minutes for February 17:
 
 Meeting Attendance:
-  *
-  *
-  *
+  * Animesh Soni
+  * Luke Bulatowicz(M)
 
 Tasks completed since last meeting:
-  *
+  * xxx
   *
 
 Tasks started, but not completed, since last meeting:
-  *
-  *
+  * X coordinate translator
+  * Y coordinate translator
 
 Tasks to be worked on (and by which team members) for the next meeting:
-  *
-  *
+  * X coordinate translator
+  * Y coordinate translator
 
 Schedule for the next week's set of pair programming meetings:
-  *
-  *
+  * Meeting during Lab, Meeting at 5pm 2/17
+  * Plan further on X & Y translator
+  * Method for Creating the escape time
