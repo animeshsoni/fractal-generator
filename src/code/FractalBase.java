@@ -6,6 +6,7 @@ package code;
  */
 public interface FractalBase {
 
+
 	/**
 	 * @return the lowest x value from the range of the fractal
 	 */
