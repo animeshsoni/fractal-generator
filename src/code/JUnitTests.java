@@ -45,6 +45,9 @@ public class JUnitTests {
 	public void burningShip5() {
 		BurningShip frac1 = new BurningShip();
 		Algorithm test = new Algorithm();
-		assertTrue(test.result(frac1) instanceof int[][]);
+		int [][] array = test.result(frac1);
+		assertTrue((array) instanceof int[][]);
+		assertEquals(array.length,512);
+		assertEquals(array[0].length, 512);
 	}
 }
