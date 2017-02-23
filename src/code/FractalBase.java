@@ -1,5 +1,9 @@
 package code;
 
+/**
+ * @author Animesh
+ *
+ */
 public interface FractalBase {
 
 	/**

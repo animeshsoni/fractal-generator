@@ -1,6 +1,6 @@
 package code;
 
-public class JuliaSet implements FractalBase{
+public class JuliaSet implements FractalBase {
 
 	@Override
 	public double xLow() {

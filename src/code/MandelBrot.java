@@ -1,6 +1,6 @@
 package code;
 
-public class MandelBrot implements FractalBase{
+public class MandelBrot implements FractalBase {
 
 	@Override
 	public double xLow() {
@@ -37,7 +37,5 @@ public class MandelBrot implements FractalBase{
 		// TODO Auto-generated method stub
 		return 0;
 	}
-	
-	
 
 }

@@ -1,6 +1,6 @@
 package code;
 
-public class Multibrot implements FractalBase{
+public class Multibrot implements FractalBase {
 
 	@Override
 	public double xLow() {
