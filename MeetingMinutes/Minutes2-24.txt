@@ -1,0 +1,23 @@
+Meeting Minutes for February 24, 2017:
+
+Meeting Attendance:
+  * Ashok Kumar
+  * Animesh Soni
+  *	Luke Bulatowicz (M)
+
+Tasks completed since last meeting:
+  * Everything
+  * Methods for Fractal Base (Abstract Class), BurningShip, MandelBrot, JuliaSet, and MultiBrot finished
+  * Tests have been writen for each of the required tests
+
+Tasks started, but not completed, since last meeting:
+  * Debugging
+  *
+
+Tasks to be worked on (and by which team members) for the next meeting:
+  * Debugging
+  *
+
+Schedule for the next week's set of pair programming meetings:
+  * Monday 5pm after Class
+  *
