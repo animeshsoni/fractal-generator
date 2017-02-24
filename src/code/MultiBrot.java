@@ -6,15 +6,16 @@ import code.FractalBase;
  * @author Luke, Animesh, Ashok
  *
  */
-public class MandelBrot extends FractalBase {
+public class MultiBrot extends FractalBase {
 
 	/*
 	 * (non-Javadoc)
 	 * 
 	 * @see codes.FractalBase#xLow()
 	 */
+	@Override
 	public double xLow() {
-		return -2.15;
+		return -1;
 	}
 
 	/*
@@ -23,7 +24,7 @@ public class MandelBrot extends FractalBase {
 	 * @see codes.FractalBase#xHigh()
 	 */
 	public double xHigh() {
-		return 0.6;
+		return 1;
 	}
 
 	/*
@@ -31,6 +32,7 @@ public class MandelBrot extends FractalBase {
 	 * 
 	 * @see codes.FractalBase#yLow()
 	 */
+	@Override
 	public double yLow() {
 		return -1.3;
 	}
@@ -49,8 +51,9 @@ public class MandelBrot extends FractalBase {
 	 * 
 	 * @see codes.FractalBase#xUpdate(double, double, double)
 	 */
+	@Override
 	public double xUpdate(double x, double y, double xCo) {
-		return Math.pow(x, 2) - Math.pow(y, 2) + xCo;
+		return Math.pow(x, 3) - (3 * x * Math.pow(y, 2)) + xCo;
 	}
 
 	/*
@@ -58,28 +61,9 @@ public class MandelBrot extends FractalBase {
 	 * 
 	 * @see codes.FractalBase#yUpdate(double, double, double)
 	 */
+	@Override
 	public double yUpdate(double x, double y, double yCo) {
-		return 2 * x * y + yCo;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see codes.FractalBase#xDiff()
-	 */
-	public double xDiff() {
-		double retVal = xHigh() - xLow();
-		return retVal;
-	}
-
-	/*
-	 * (non-Javadoc)
-	 * 
-	 * @see codes.FractalBase#yDiff()
-	 */
-	public double yDiff() {
-		double retVal = yHigh() - yLow();
-		return retVal;
+		return Math.abs(3 * Math.pow(x, 2) * y) - Math.pow(y, 3) + yCo;
 	}
 
 }
