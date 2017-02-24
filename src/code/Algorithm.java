@@ -8,12 +8,18 @@ public class Algorithm {
 	public Algorithm() {
 
 	}
-	/*
-	 * public static void main(String[] args){ Pixel p = new
-	 * Pixel(-1.7443359374999874, -0.017451171875000338); BurningShip frac = new
-	 * BurningShip(); Algorithm a = new Algorithm();
-	 * System.out.print(a.escapeTime(p, frac)); }
-	 */
+	
+	  public static void main(String[] args){ 
+		  Pixel p = new Pixel(-1.7443359374999874, -0.017451171875000338); 
+		  BurningShip frac = new BurningShip(); 
+		  Algorithm a = new Algorithm();
+		  double x = frac.xUpdate(1.2980673819541617, 0.043430240631103914);
+		  double y = frac.yUpdate(1.2980673819541617, 0.043430240631103914);
+		  System.out.println(x);
+		  System.out.println(y);
+		  System.out.println(a.distance(x, y));
+	      //System.out.print(a.escapeTime(p, frac)); }
+	  }
 
 	/**
 	 * @param fractal
@@ -31,18 +37,11 @@ public class Algorithm {
 		Pixel[][] array = pixelArray(fractal);
 
 		for (int i = 0; i < 512; i++) {
-			for (int j = 0; i < 512; i++) {
+			for (int j = 0; j < 512; j++) {
 
-				/*
-				 * xCalc = array[i][j].x(); yCalc = array[i][j].y(); double dist
-				 * = distance(xCalc, yCalc); int passes = 0;
-				 * 
-				 * while (dist <= 2 && passes < 255) { xCalc =
-				 * frac.xUpdate(xCalc, yCalc); yCalc = frac.yUpdate(xCalc,
-				 * yCalc); passes++; dist = distance(xCalc, yCalc); }
-				 */
+				
 				retVal[i][j] = escapeTime(array[i][j], fractal);
-
+               // System.out.println(retVal[i][j]);  
 			}
 
 		}
@@ -62,10 +61,11 @@ public class Algorithm {
 		double yCalc = p.y();
 		double dist = distance(xCalc, yCalc);
 		int passes = 0;
-
+        double xTemp = 0;
 		while (dist <= 2 && passes < 255) {
+			xTemp = xCalc;
 			xCalc = fractal.xUpdate(xCalc, yCalc);
-			yCalc = fractal.yUpdate(xCalc, yCalc);
+			yCalc = fractal.yUpdate(xTemp, yCalc);
 			passes++;
 			dist = distance(xCalc, yCalc);
 		}
@@ -102,6 +102,7 @@ public class Algorithm {
 			for (int j = 0; j < 512; j++) {
 				pixels[i][j] = new Pixel(x, y);
 				y = y + fractal.yDiff();
+				//System.out.println(x + "" + y);
 			}
 			x = x + fractal.xDiff();
 		}

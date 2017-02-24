@@ -28,17 +28,19 @@ public class JUnitTests {
 
 	@Test
 	public void burningShip4() {
-		Pixel p1 = new Pixel(-1.8, -0.08);
-		Pixel p2 = new Pixel(-1.7, 0.025);
-		Pixel p3 = new Pixel(-1.6998046875, -0.07979492187);
+		
 		BurningShip frac1 = new BurningShip();
 		Algorithm test = new Algorithm();
-		assertTrue(test.escapeTime(p1, frac1) != 0);
-		assertTrue(test.escapeTime(p1, frac1) != 1);
-		assertTrue(test.escapeTime(p2, frac1) != 0);
-		assertTrue(test.escapeTime(p2, frac1) != 1);
-		assertTrue(test.escapeTime(p3, frac1) != 0);
-		assertTrue(test.escapeTime(p3, frac1) != 1);
+		int[][] array = test.result(frac1);
+		boolean check = true;
+		for(int i = 0; i < 512; i++){
+			for (int j = 0; j<512; j++){
+				if((array[i][j]==0) || array[i][j]==1){
+					check = false;
+				}
+			}
+		}
+		assertTrue(check);
 	}
 
 	@Test
