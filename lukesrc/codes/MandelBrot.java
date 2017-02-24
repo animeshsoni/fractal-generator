@@ -26,13 +26,13 @@ public class MandelBrot extends FractalBase{
 	}
 
 	public double xDiff() {
-		// TODO Auto-generated method stub
-		return 0;
+		double retVal = xHigh()-xLow();
+		return retVal;
 	}
 
 	public double yDiff() {
-		// TODO Auto-generated method stub
-		return 0;
+		double retVal = yHigh()-yLow();
+		return retVal;
 	}
 
 

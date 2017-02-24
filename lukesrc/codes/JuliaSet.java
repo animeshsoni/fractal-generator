@@ -32,13 +32,13 @@ public class JuliaSet extends FractalBase{
 
 	@Override
 	public double xDiff() {
-		// TODO Auto-generated method stub
-		return 0;
+		double retVal = xHigh()-xLow();
+		return retVal;
 	}
 
 	@Override
 	public double yDiff() {
-		// TODO Auto-generated method stub
-		return 0;
+		double retVal = yHigh()-yLow();
+		return retVal;
 	}
 }

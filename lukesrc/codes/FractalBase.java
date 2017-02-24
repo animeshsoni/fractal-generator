@@ -21,22 +21,28 @@ public abstract class FractalBase {
 		
 		//Takes in Array Index returns x Coordinate Value
 		public double xCalc(int r){
-			return (r)*xDiff() + xLow();
+			double diff = xDiff()/511;
+			double retVal = ((r*diff) + xLow());
+			return retVal;
 		}
 
 		//Takes in Array Index returns y Coordinate Value
 		public double yCalc(int c){
-			return yHigh() - (c)*yDiff();
+			double diff = yDiff()/511;
+			double retVal = (yHigh() - (c*diff));
+			return retVal;
 		}
-
+		
 		//x Range
 		public double xDiff(){
-			return xHigh()-xLow();
+			double retVal = xHigh()-xLow();
+			return retVal;
 		}
 		
 		//y Domain
 		public double yDiff(){
-			return xHigh()-xLow();
+			double retVal = yHigh()-yLow();
+			return retVal;
 		}
 
 		public int[][] escapeTimes(){
