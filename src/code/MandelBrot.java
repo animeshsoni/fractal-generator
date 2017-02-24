@@ -1,4 +1,4 @@
-package code;
+/*package code;
 
 
 public class MandelBrot implements FractalBase {
@@ -40,3 +40,4 @@ public class MandelBrot implements FractalBase {
 	}
 
 }
+*/
