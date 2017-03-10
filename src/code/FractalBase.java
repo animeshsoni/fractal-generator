@@ -6,7 +6,7 @@ package code;
  */
 
 public abstract class FractalBase {
-	private int escDist = 2;
+	private double escDist = 2;
 
 	/**
 	 * @return Low x Value
@@ -127,7 +127,7 @@ public abstract class FractalBase {
 		return passes;
 	}
 	
-	public boolean checkEscDist(int x){
+	public boolean checkEscDist(double x){
 		if(x>0){
 			setEscDist(x);
 			return true;
@@ -135,7 +135,7 @@ public abstract class FractalBase {
 		return false;
 	}
 	
-	public void setEscDist(int x){
+	public void setEscDist(double x){
 		escDist = x;
 	}
 }
