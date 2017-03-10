@@ -1,0 +1,51 @@
+User Steps:
+- Program opens
+- Users opens file Drop down menu
+  - This calls a method from the GUI.GUI class that calls an action listener to drop down a Combo Box, which will show three more buttons, Set Escape Distance and Quit. 
+  - If the User Selects, Set Escape Distance a pop up window will be called by an action Listender in GUI.FractalScreen, this action Listener will then call the method, Code.FractalBase.checkEscDist(int x). 
+  - Code.FractalBase.checkEscDist(int x) will check whether the input value is a valid escape distance. 
+  - If the input is not a valid escape distance it will return false and reopen a new pop up window to re-enter an escape distance.
+  - If the input is valid the method Code.FractalBase.checkEscDist(int x) will run the method Code.FractalBase.setEscDist(int x) which sets the variable int escDist = x.
+  - This then stores the value x as the value for the escape distance in the class Code.FractalBase. 
+
+Classes
+GUI.FractalScreen
+ JFrame mainWin
+  - The window that the Fractal will be in
+
+ JFrame popUp
+  - The window that allows the user to input the Esc. Distance
+
+ ComboBox
+  - Will have the drop down that holds the "Set Escape Distance" button
+
+ JButton setEscDist
+  - Opens winow popUp
+
+ - The Esc. Distance will be set with an int input and a button
+ - The button will have an action listener that runs the method Code.FractalBase.checkEscDist(int x)
+ - If Code.FractalBase.checkEscDist(int x) fails, the GUI.FractalScreen will create the pop up window where the user can input the Esc. Distance again. This will continue until the user inputs a valid value for Esc. Distance.
+ - If Code.FractalBase.checkEscDist(int x) is successful it will generate the last fractal used, or default fractal.
+
+Code.FractalBase
+ int escDist
+  - Sets the value that the fractal will escape at
+
+ checkEscDist(int x)
+  - Takes in int x
+  - Checks if x is greater than 0 
+  - Returns true if x is greater than 0 it will call Code.FractalBase.setEscDist(int x)
+  - returns false if x is less than 0 it will close the current window and open a new window that will have the same pop up window.
+
+ setEscDist(int x)
+  - Takes in int x
+  - Sets escDist = 0;
+
+
+
+
+
+
+
+
+ 
