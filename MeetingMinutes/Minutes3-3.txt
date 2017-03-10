@@ -1,0 +1,21 @@
+Meeting Minutes for March 3, 2017:
+
+Meeting Attendance:
+  * Animesh Soni
+  *	Luke Bulatowicz (M)
+  * Ashok Kumar
+
+Tasks completed since last meeting:
+  * Begin planning for changing esc. distance and passes
+  *
+
+Tasks started, but not completed, since last meeting:
+  * ---
+
+Tasks to be worked on (and by which team members) for the next meeting:
+  * Create new JUnit tests for new tests
+  * Update old JUnit tests 
+
+Schedule for the next week's set of pair programming meetings:
+  * Friday 3/3 5pm
+  * Monday 3/6 5pm

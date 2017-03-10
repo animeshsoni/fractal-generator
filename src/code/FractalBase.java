@@ -116,7 +116,7 @@ public abstract class FractalBase {
 		double yCo = y;
 		double dist = Math.sqrt(Math.pow(xCalc, 2) + Math.pow(yCalc, 2));
 		int passes = 0;
-		while (dist <= 2 && passes < 255) {
+		while (dist <= 2 &&  passes < 255) {
 			double xTemp = xCalc;
 			xCalc = xUpdate(xTemp, yCalc, xCo);
 			yCalc = yUpdate(xTemp, yCalc, yCo);
