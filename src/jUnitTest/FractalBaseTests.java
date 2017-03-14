@@ -21,6 +21,7 @@ public class FractalBaseTests {
 		assertEquals(-1.61183953, man.xCalc(100), 0.001);
 		assertEquals(.6, man.xCalc(511), 0.00001);
 	}
+  
 
 	@Test
 	public void juliaSetXTest() {
@@ -112,13 +113,24 @@ public class FractalBaseTests {
 
 		assertEquals(1, man.calcEscapeTime(.5946289062500001, 1.2949218750000122), 0.0000001);
 	}
+	@Test
+	public void P2_mandelBrotEscTimeTest2() {
+		FractalBase man = new MandelBrot();
+
+		assertEquals(10, man.calcEscapeTime(0.46007827788650374, -0.3383561643835661), 0.0000001);
+	}
+	
 
 	@Test
 	public void juliaSetEscTimeTest2() {
 		FractalBase julia = new JuliaSet();
 		assertEquals(1, julia.calcEscapeTime(1.6933593749999853, 0.9765625));
 	}
-
+	@Test
+	public void P2_juliaSetEscTimeTest2() {
+		FractalBase julia = new JuliaSet();
+		assertEquals(10, julia.calcEscapeTime(1.4538160469667272,  -0.13502935420743645));
+	}
 	@Test
 	public void burnShipEscTimeTest2() {
 		FractalBase ship = new BurningShip();
@@ -133,12 +145,21 @@ public class FractalBaseTests {
 		}
 		assertTrue(check);
 	}
-
+	@Test
+	public void P2_burnShipEscTimeTest2() {
+		FractalBase ship = new BurningShip();
+		assertEquals(10, ship.calcEscapeTime(-1.6999999999999802,  0.0030136986301371603));
+	}
 	@Test
 	public void multiBrotEscTimeTest2() {
 		FractalBase multi = new MultiBrot();
 
 		assertEquals(1, multi.calcEscapeTime(0.9921875, 1.05625));
+	}
+	@Test
+	public void P_2multiBrotEscTimeTest2() {
+		FractalBase multi = new MultiBrot();
+assertEquals(10, multi.calcEscapeTime(0.7025440313111545,-0.5520547945205528 ));
 	}
 
 	@Test
