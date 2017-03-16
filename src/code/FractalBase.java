@@ -6,7 +6,7 @@ package code;
  */
 
 public abstract class FractalBase {
-	private double escDist = 2;
+	private static double escDist = 2;
 
 	/**
 	 * @return Low x Value
@@ -123,6 +123,7 @@ public abstract class FractalBase {
 			yCalc = yUpdate(xTemp, yCalc, yCo);
 			passes++;
 			dist = Math.sqrt(Math.pow(xCalc, 2) + Math.pow(yCalc, 2));
+			//System.out.println(xCalc + ", " + yCalc +", " + dist + ", " +passes);
 		}
 		return passes;
 	}
@@ -135,7 +136,7 @@ public abstract class FractalBase {
 		return false;
 	}
 	
-	public void setEscDist(double x){
+	public static void setEscDist(double x){
 		escDist = x;
 	}
 }

@@ -53,7 +53,7 @@ public class MultiBrot extends FractalBase {
 	 */
 	@Override
 	public double xUpdate(double x, double y, double xCo) {
-		return Math.pow(x, 3) - (3 * x * Math.pow(y, 2)) + xCo;
+		return (x*x*x) - (3 * x * (y*y)) + xCo;
 	}
 
 	/*
@@ -63,7 +63,7 @@ public class MultiBrot extends FractalBase {
 	 */
 	@Override
 	public double yUpdate(double x, double y, double yCo) {
-		return Math.abs(3 * Math.pow(x, 2) * y) - Math.pow(y, 3) + yCo;
+		return (3 * x * x  * y) - (y*y*y) + yCo;
 	}
 
 }
