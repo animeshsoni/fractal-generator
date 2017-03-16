@@ -1,0 +1,22 @@
+Meeting Minutes for March 10, 2017:
+
+Meeting Attendance:
+  * Ashok Kumar
+  * Animesh Soni
+  * Luke Bulatowicz(M)
+
+Tasks completed since last meeting:
+  * Nothing
+  *
+
+Tasks started, but not completed, since last meeting:
+  * UI
+  * Color Thingy
+
+Tasks to be worked on (and by which team members) for the next meeting:
+  * Everything
+  *
+
+Schedule for the next week's set of pair programming meetings:
+  * Friday 3/10 from 3pm - 5pm
+  * 
