@@ -1,0 +1,3 @@
+To start the program use the Driver class in package "code". 
+Run the driver class as a Java Application.
+The Driver class has a main method which will call the required methods to do the rest.

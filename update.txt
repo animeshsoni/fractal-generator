@@ -1,0 +1,25 @@
+The Jframe has 3 menu options:
+
+File- This has Set Escape Distance, Set Maximum Escape Time, Set Number of Colors(Extra functionality), Reset and Exit Options;
+      
+      Click the Set Escape Distance to get a dialogue box.
+      Enter an int greater than 0 as the escape distance.
+      If you enter an invalid format or value the dialogue box will
+      pop up again asking for a new value until a valid escape distance
+      is entered.
+      
+      Click the Set Maximum Escape Time to get a dialogue box.
+      Enter an int greater than 0 or less than 256 as the escape distance.
+      If you enter an invalid format or value the dialogue box will
+      pop up again asking for a new value until a valid max escape time
+      is entered.
+      
+      Click the Set Number of Colors to get another dialogue box.
+      Choose one of the int values from the drop down.
+      And the fractel panel will update itself accordingly. 
+
+Fractal- This Menu has 4 radio buttons for each fractal.
+         Choose the required button to change the fractal.
+         
+Color- This Menu has 4 radio buttons for each color scheme.
+       Choose the required button to change the color of the fractal.      
